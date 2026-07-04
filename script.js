@@ -4,17 +4,6 @@ const prefButtons = document.querySelectorAll(".pref-list button");
 const heroSelect = document.querySelector(".hero-search select");
 const heroSearchButton = document.querySelector(".brown-btn");
 
-searchButton.addEventListener("click", () => {
-  const keyword = searchInput.value.trim();
-
-  if (!keyword) {
-    alert("検索キーワードを入力してください");
-    return;
-  }
-
-  alert(`${keyword} を検索します`);
-});
-
 const prefLinks = {
   "北海道":"hokkaido.html",
   "青森":"aomori.html",
@@ -65,21 +54,22 @@ const prefLinks = {
   "沖縄":"okinawa.html"
 };
 
-prefButtons.forEach(button => {
+searchButton.addEventListener("click", () => {
+  const keyword = searchInput.value.trim();
 
+  if (keyword === "") {
+    alert("検索キーワードを入力してください");
+    return;
+  }
+
+  location.href = `search.html?keyword=${encodeURIComponent(keyword)}`;
+});
+
+prefButtons.forEach((button) => {
   button.addEventListener("click", () => {
-
-    const pref = button.textContent;
-
-    if(prefLinks[pref]){
-      location.href = prefLinks[pref];
-    }
-    else{
-      alert("ページ準備中です");
-    }
-
+    const pref = button.textContent.trim();
+    location.href = prefLinks[pref];
   });
-
 });
 
 heroSearchButton.addEventListener("click", () => {
@@ -90,5 +80,5 @@ heroSearchButton.addEventListener("click", () => {
     return;
   }
 
-  alert(`${area} の条件検索をします`);
+  location.href = prefLinks[area];
 });
