@@ -6,6 +6,7 @@
   <title>全国日帰り温泉データベース</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="top-header">
@@ -20,6 +21,7 @@
   <div class="header-actions">
     <a href="#">♡ お気に入り</a>
     <a href="#">↺ 閲覧履歴</a>
+
     <div class="search-box">
       <input type="text" placeholder="温泉名・施設名を検索">
       <button>検索</button>
@@ -28,7 +30,7 @@
 </header>
 
 <nav class="main-nav">
-  <a href="#">🏠 ホーム</a>
+  <a href="index.html">🏠 ホーム</a>
   <a href="#">♨ 温泉を探す</a>
   <a href="#">☰ 条件から探す</a>
   <a href="#">♕ ランキング</a>
@@ -42,6 +44,7 @@
     <p>今日、どこ行く？</p>
     <h2>日帰り温泉でリフレッシュ ♨</h2>
     <span>全国の日帰り温泉を検索・比較できるデータベースサイト</span>
+
     <div class="hero-stats">
       <b>♨ 掲載施設数 2,345件</b>
       <b>💬 口コミ投稿数 8,742件</b>
@@ -50,12 +53,57 @@
 
   <div class="hero-search">
     <h3>温泉を探す</h3>
+
     <label>エリアを選択</label>
     <select>
       <option>都道府県を選択</option>
-      <option>福岡</option>
-      <option>大分</option>
+      <option>北海道</option>
+      <option>青森</option>
+      <option>岩手</option>
+      <option>宮城</option>
+      <option>秋田</option>
+      <option>山形</option>
+      <option>福島</option>
+      <option>茨城</option>
+      <option>栃木</option>
+      <option>群馬</option>
+      <option>埼玉</option>
+      <option>千葉</option>
+      <option>東京</option>
+      <option>神奈川</option>
+      <option>新潟</option>
+      <option>富山</option>
+      <option>石川</option>
+      <option>福井</option>
+      <option>山梨</option>
+      <option>長野</option>
+      <option>岐阜</option>
+      <option>静岡</option>
+      <option>愛知</option>
+      <option>三重</option>
+      <option>滋賀</option>
+      <option>京都</option>
+      <option>大阪</option>
+      <option>兵庫</option>
+      <option>奈良</option>
+      <option>和歌山</option>
+      <option>鳥取</option>
+      <option>島根</option>
+      <option>岡山</option>
       <option>広島</option>
+      <option>山口</option>
+      <option>徳島</option>
+      <option>香川</option>
+      <option>愛媛</option>
+      <option>高知</option>
+      <option>福岡</option>
+      <option>佐賀</option>
+      <option>長崎</option>
+      <option>熊本</option>
+      <option>大分</option>
+      <option>宮崎</option>
+      <option>鹿児島</option>
+      <option>沖縄</option>
     </select>
 
     <label>こだわり条件</label>
@@ -83,40 +131,80 @@
     <p>行きたいエリアを選択して、日帰り温泉を探そう！</p>
   </div>
 
-<div class="pref-wrap no-map">
-    <div class="map-box">
-    </div>
-
+  <div class="pref-wrap no-map">
     <div class="pref-list">
-      <h4>北海道・東北</h4>
+
       <div>
-        <button>北海道</button><button>青森</button><button>岩手</button><button>宮城</button><button>秋田</button><button>山形</button><button>福島</button>
+        <h4>北海道・東北</h4>
+        <button>北海道</button>
+        <button>青森</button>
+        <button>岩手</button>
+        <button>宮城</button>
+        <button>秋田</button>
+        <button>山形</button>
+        <button>福島</button>
       </div>
 
-      <h4>関東</h4>
       <div>
-        <button>東京</button><button>神奈川</button><button>埼玉</button><button>千葉</button><button>茨城</button><button>栃木</button>
+        <h4>関東</h4>
+        <button>茨城</button>
+        <button>栃木</button>
+        <button>群馬</button>
+        <button>埼玉</button>
+        <button>千葉</button>
+        <button>東京</button>
+        <button>神奈川</button>
       </div>
 
-      <h4>中部</h4>
       <div>
-        <button>新潟</button><button>富山</button><button>石川</button><button>福井</button><button>山梨</button><button>長野</button>
+        <h4>中部</h4>
+        <button>新潟</button>
+        <button>富山</button>
+        <button>石川</button>
+        <button>福井</button>
+        <button>山梨</button>
+        <button>長野</button>
+        <button>岐阜</button>
+        <button>静岡</button>
+        <button>愛知</button>
       </div>
 
-      <h4>関西</h4>
       <div>
-        <button>滋賀</button><button>京都</button><button>大阪</button><button>兵庫</button><button>奈良</button><button>和歌山</button>
+        <h4>関西</h4>
+        <button>三重</button>
+        <button>滋賀</button>
+        <button>京都</button>
+        <button>大阪</button>
+        <button>兵庫</button>
+        <button>奈良</button>
+        <button>和歌山</button>
       </div>
 
-      <h4>中国・四国</h4>
       <div>
-        <button>鳥取</button><button>島根</button><button>岡山</button><button>広島</button><button>山口</button><button>徳島</button><button>香川</button><button>愛媛</button><button>高知</button>
+        <h4>中国・四国</h4>
+        <button>鳥取</button>
+        <button>島根</button>
+        <button>岡山</button>
+        <button>広島</button>
+        <button>山口</button>
+        <button>徳島</button>
+        <button>香川</button>
+        <button>愛媛</button>
+        <button>高知</button>
       </div>
 
-      <h4>九州・沖縄</h4>
       <div>
-        <button>福岡</button><button>佐賀</button><button>長崎</button><button>熊本</button><button>大分</button><button>宮崎</button><button>鹿児島</button><button>沖縄</button>
+        <h4>九州・沖縄</h4>
+        <button>福岡</button>
+        <button>佐賀</button>
+        <button>長崎</button>
+        <button>熊本</button>
+        <button>大分</button>
+        <button>宮崎</button>
+        <button>鹿児島</button>
+        <button>沖縄</button>
       </div>
+
     </div>
   </div>
 </section>
@@ -128,17 +216,32 @@
   </div>
 
   <div class="feature-grid">
-    <div class="feature-card"><span>絶景を楽しめる温泉特集</span></div>
-    <div class="feature-card"><span>サウナが自慢の温泉特集</span></div>
-    <div class="feature-card"><span>家族で楽しめる温泉特集</span></div>
-    <div class="feature-card"><span>源泉かけ流しの温泉特集</span></div>
-    <div class="feature-card"><span>コスパ最強の温泉特集</span></div>
+    <div class="feature-card">
+      <span>絶景を楽しめる温泉特集</span>
+    </div>
+
+    <div class="feature-card">
+      <span>サウナが自慢の温泉特集</span>
+    </div>
+
+    <div class="feature-card">
+      <span>家族で楽しめる温泉特集</span>
+    </div>
+
+    <div class="feature-card">
+      <span>源泉かけ流しの温泉特集</span>
+    </div>
+
+    <div class="feature-card">
+      <span>コスパ最強の温泉特集</span>
+    </div>
   </div>
 </section>
 
 <section class="ranking-section">
   <div class="section-head">
     <h2>日帰り温泉ランキング</h2>
+
     <div class="tabs">
       <button>総合ランキング</button>
       <button>サウナが人気</button>
@@ -147,59 +250,62 @@
     </div>
   </div>
 
-<div class="ranking-grid">
-  <div class="rank-card">
-    <span>1</span>
-    <div></div>
-    <h3>箱根湯寮</h3>
-    <p>★★★★★ 4.7</p>
-    <b>大人：1,700円〜</b>
-    <small>神奈川県 箱根町</small>
-  </div>
+  <div class="ranking-grid">
 
-  <div class="rank-card">
-    <span>2</span>
-    <div></div>
-    <h3>杉乃井ホテル 棚湯</h3>
-    <p>★★★★★ 4.6</p>
-    <b>大人：2,000円〜</b>
-    <small>大分県 別府市</small>
-  </div>
+    <div class="rank-card">
+      <span>1</span>
+      <div></div>
+      <h3>箱根湯寮</h3>
+      <p>★★★★★ 4.7</p>
+      <b>大人：1,700円〜</b>
+      <small>神奈川県 箱根町</small>
+    </div>
 
-  <div class="rank-card">
-    <span>3</span>
-    <div></div>
-    <h3>ほったらかし温泉</h3>
-    <p>★★★★★ 4.5</p>
-    <b>大人：900円〜</b>
-    <small>山梨県 山梨市</small>
-  </div>
+    <div class="rank-card">
+      <span>2</span>
+      <div></div>
+      <h3>杉乃井ホテル 棚湯</h3>
+      <p>★★★★★ 4.6</p>
+      <b>大人：2,000円〜</b>
+      <small>大分県 別府市</small>
+    </div>
 
-  <div class="rank-card">
-    <span>4</span>
-    <div></div>
-    <h3>道後温泉本館</h3>
-    <p>★★★★☆ 4.4</p>
-    <b>大人：700円〜</b>
-    <small>愛媛県 松山市</small>
-  </div>
+    <div class="rank-card">
+      <span>3</span>
+      <div></div>
+      <h3>ほったらかし温泉</h3>
+      <p>★★★★★ 4.5</p>
+      <b>大人：900円〜</b>
+      <small>山梨県 山梨市</small>
+    </div>
 
-  <div class="rank-card">
-    <span>5</span>
-    <div></div>
-    <h3>草津温泉 御座之湯</h3>
-    <p>★★★★☆ 4.4</p>
-    <b>大人：800円〜</b>
-    <small>群馬県 草津町</small>
+    <div class="rank-card">
+      <span>4</span>
+      <div></div>
+      <h3>道後温泉本館</h3>
+      <p>★★★★☆ 4.4</p>
+      <b>大人：700円〜</b>
+      <small>愛媛県 松山市</small>
+    </div>
+
+    <div class="rank-card">
+      <span>5</span>
+      <div></div>
+      <h3>草津温泉 御座之湯</h3>
+      <p>★★★★☆ 4.4</p>
+      <b>大人：800円〜</b>
+      <small>群馬県 草津町</small>
+    </div>
+
   </div>
-</div>
 </section>
 
 <section class="bottom-grid">
+
   <div class="info-box">
     <h2>新着口コミ</h2>
-    <p><b>箱根温泉</b><br>★★★★★ 5.0<br>平日に行きましたが、とても空いていてゆっくりできました。</p>
-    <p><b>九番湯 大湯</b><br>★★★★☆ 4.0</p>
+    <p><b>箱根湯寮</b><br>★★★★★ 5.0<br>森の中の露天風呂が最高でした。</p>
+    <p><b>杉乃井ホテル 棚湯</b><br>★★★★☆ 4.5<br>別府湾の景色が素晴らしかったです。</p>
   </div>
 
   <div class="info-box">
@@ -214,9 +320,12 @@
     <p>Rakuten Travel</p>
     <button>宿泊施設も検索する</button>
   </div>
+
 </section>
 
 </main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
