@@ -2,10 +2,14 @@ const input = document.getElementById("searchInput");
 const cards = document.querySelectorAll(".card");
 
 input.addEventListener("input", function () {
-    const keyword = this.value.toLowerCase();
+    const keyword = this.value.trim().toLowerCase();
 
     cards.forEach(card => {
-        const text = card.getAttribute("data-keyword").toLowerCase();
+        const data = card.getAttribute("data-keyword");
+
+        if (!data) return;
+
+        const text = data.toLowerCase();
 
         if (text.includes(keyword)) {
             card.style.display = "block";
