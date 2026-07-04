@@ -218,17 +218,10 @@ main {
   justify-content: center;
 }
 
-.fake-map {
-  width: 290px;
-  height: 260px;
-  background: linear-gradient(135deg, #e99ab5, #f0d77b, #7fd5cf, #91c4f2);
-  clip-path: polygon(65% 0, 78% 13%, 70% 30%, 88% 48%, 78% 70%, 55% 78%, 42% 100%, 28% 82%, 10% 88%, 20% 62%, 0 48%, 27% 40%, 18% 20%, 45% 18%);
-  opacity: .7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
+.japan-map {
+  width: 330px;
+  max-width: 100%;
+  display: block;
 }
 
 .pref-list {
