@@ -204,3 +204,11 @@ header{
 .card{
     height:100%;
 }
+.card h3{
+    font-size:18px;
+}
+
+.card p{
+    font-size:14px;
+    color:#666;
+}
