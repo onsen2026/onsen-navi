@@ -238,30 +238,40 @@ main{
 
 .pref-list{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
 }
-
 
 .pref-list h4{
-  font-size:16px;
-  margin-bottom:8px;
+  font-size:17px;
+  margin-bottom:12px;
+  padding-left:6px;
+  border-left:5px solid #7a3607;
 }
 
+.pref-list > div{
+  background:white;
+  border:1px solid #e2e2e2;
+  border-radius:12px;
+  padding:18px;
+  min-height:120px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.04);
+}
 
 .pref-list button{
-  background:white;
+  background:#fff;
   border:1px solid #ddd;
-  padding:10px 15px;
+  padding:10px 16px;
   margin:5px;
-  border-radius:5px;
+  border-radius:999px;
   cursor:pointer;
+  font-weight:bold;
 }
-
 
 .pref-list button:hover{
   background:#f3eadf;
   border-color:#7a3607;
+  color:#7a3607;
 }
 
 
