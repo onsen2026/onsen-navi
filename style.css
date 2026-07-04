@@ -226,8 +226,8 @@ main {
 
 .pref-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 .pref-list h4 {
@@ -489,21 +489,3 @@ main {
   box-shadow: 0 3px 8px rgba(0,0,0,.25);
 }
 
-.map-btn:hover {
-  background: #4f2103;
-}
-
-.kyushu {
-  left: 20px;
-  bottom: 35px;
-}
-
-.chugoku {
-  left: 95px;
-  bottom: 105px;
-}
-
-.kansai {
-  right: 70px;
-  bottom: 135px;
-}
