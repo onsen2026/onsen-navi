@@ -16,10 +16,29 @@ searchButton.addEventListener("click", () => {
 });
 
 prefButtons.forEach((button) => {
+
   button.addEventListener("click", () => {
+
     const pref = button.textContent;
-    alert(`${pref} の温泉ページへ移動します`);
+
+    if (pref === "福岡") {
+      location.href = "fukuoka.html";
+    }
+
+    else if (pref === "大分") {
+      location.href = "oita.html";
+    }
+
+    else if (pref === "広島") {
+      location.href = "hiroshima.html";
+    }
+
+    else {
+      alert(`${pref} の温泉情報は準備中です`);
+    }
+
   });
+
 });
 
 heroSearchButton.addEventListener("click", () => {
