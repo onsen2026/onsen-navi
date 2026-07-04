@@ -184,3 +184,23 @@ header{
     top: 0;
     z-index: 1000;
 }
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 16px;
+    background:#009688;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.btn:hover{
+    opacity:0.8;
+}
+.cards{
+    align-items:stretch;
+}
+
+.card{
+    height:100%;
+}
