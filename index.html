@@ -1,120 +1,184 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日帰り温泉データベース</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全国日帰り温泉データベース</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="header">
-
-    <div class="logo">♨ 日帰り温泉データベース</div>
-
-    <div class="header-center">
-        <input type="text" id="searchInput" placeholder="温泉・エリア・特徴で検索">
+<header class="top-header">
+  <div class="logo">
+    <span class="logo-mark">♨</span>
+    <div>
+      <h1>全国日帰り温泉データベース</h1>
+      <p>気軽に行ける日帰り温泉を探そう</p>
     </div>
+  </div>
 
-    <nav class="nav">
-        <a href="#" id="favBtn">お気に入り</a>
-        <a href="#" id="historyBtn">検索履歴</a>
-    </nav>
-
+  <div class="header-actions">
+    <a href="#">♡ お気に入り</a>
+    <a href="#">↺ 閲覧履歴</a>
+    <div class="search-box">
+      <input type="text" placeholder="温泉名・施設名を検索">
+      <button>検索</button>
+    </div>
+  </div>
 </header>
 
+<nav class="main-nav">
+  <a href="#">🏠 ホーム</a>
+  <a href="#">♨ 温泉を探す</a>
+  <a href="#">☰ 条件から探す</a>
+  <a href="#">♕ ランキング</a>
+  <a href="#">♡ 特集</a>
+  <a href="#">🏨 観光情報</a>
+  <a href="#">✎ ブログ・コラム</a>
+</nav>
+
 <section class="hero">
-    <h1>日帰り温泉データベース</h1>
-    <p>中国・九州の人気温泉をまとめて検索</p>
+  <div class="hero-text">
+    <p>今日、どこ行く？</p>
+    <h2>日帰り温泉でリフレッシュ ♨</h2>
+    <span>全国の日帰り温泉を検索・比較できるデータベースサイト</span>
+    <div class="hero-stats">
+      <b>♨ 掲載施設数 2,345件</b>
+      <b>💬 口コミ投稿数 8,742件</b>
+    </div>
+  </div>
 
-    <a class="btn" href="ranking.html">人気ランキングを見る</a>
+  <div class="hero-search">
+    <h3>温泉を探す</h3>
+    <label>エリアを選択</label>
+    <select>
+      <option>都道府県を選択</option>
+      <option>福岡</option>
+      <option>大分</option>
+      <option>広島</option>
+    </select>
+
+    <label>こだわり条件</label>
+    <div class="check-list">
+      <label><input type="checkbox"> 露天風呂</label>
+      <label><input type="checkbox"> サウナ</label>
+      <label><input type="checkbox"> 源泉かけ流し</label>
+      <label><input type="checkbox"> 貸切風呂</label>
+      <label><input type="checkbox"> 休憩所</label>
+      <label><input type="checkbox"> 食事処</label>
+      <label><input type="checkbox"> 24時間営業</label>
+      <label><input type="checkbox"> 駐車場あり</label>
+    </div>
+
+    <button class="brown-btn">この条件で検索する</button>
+    <a class="clear-link" href="#">すべての条件をクリア</a>
+  </div>
 </section>
 
-<section class="area">
+<main>
 
-<h2>エリアから探す</h2>
+<section class="pref-section">
+  <div class="section-title">
+    <h2>都道府県から探す</h2>
+    <p>行きたいエリアを選択して、日帰り温泉を探そう！</p>
+  </div>
 
-<div class="cards">
+  <div class="pref-wrap">
+    <div class="map-box">
+      <div class="fake-map">日本地図</div>
+    </div>
 
-<div class="card" data-keyword="広島 宮浜 海 露天風呂">
-    <h3>広島県</h3>
-    <p>宮島・湯来など人気温泉が多数</p>
+    <div class="pref-list">
+      <h4>北海道・東北</h4>
+      <div>
+        <button>北海道</button><button>青森</button><button>岩手</button><button>宮城</button><button>秋田</button><button>山形</button><button>福島</button>
+      </div>
 
-    <a class="btn" href="hiroshima.html">
-        おすすめ温泉を見る →
-    </a>
-</div>
+      <h4>関東</h4>
+      <div>
+        <button>東京</button><button>神奈川</button><button>埼玉</button><button>千葉</button><button>茨城</button><button>栃木</button>
+      </div>
 
-<div class="card">
+      <h4>中部</h4>
+      <div>
+        <button>新潟</button><button>富山</button><button>石川</button><button>福井</button><button>山梨</button><button>長野</button>
+      </div>
 
-<h3>山口県</h3>
+      <h4>関西</h4>
+      <div>
+        <button>滋賀</button><button>京都</button><button>大阪</button><button>兵庫</button><button>奈良</button><button>和歌山</button>
+      </div>
 
-<p>おすすめ温泉を見る</p>
+      <h4>中国・四国</h4>
+      <div>
+        <button>鳥取</button><button>島根</button><button>岡山</button><button>広島</button><button>山口</button><button>徳島</button><button>香川</button><button>愛媛</button><button>高知</button>
+      </div>
 
-</div>
-
-<div class="card" data-keyword="福岡 博多 サウナ 都市温泉">
-    <h3>福岡県</h3>
-    <p>都市型でアクセス抜群の温泉</p>
-
-    <a class="btn" href="fukuoka.html">おすすめ温泉を見る →</a>
-</div>
-
-<div class="card" data-keyword="大分 別府 由布院 地獄めぐり 人気温泉">
-    <h3>大分県</h3>
-    <p>日本有数の温泉地</p>
-
-    <a class="btn" href="oita.html">おすすめ温泉を見る →</a>
-</div>
-
-</div>
-
+      <h4>九州・沖縄</h4>
+      <div>
+        <button>福岡</button><button>佐賀</button><button>長崎</button><button>熊本</button><button>大分</button><button>宮崎</button><button>鹿児島</button><button>沖縄</button>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="feature">
+<section class="feature-section">
+  <div class="section-head">
+    <h2>おすすめ特集</h2>
+    <a href="#">もっと見る 〉</a>
+  </div>
 
-<h2>
-
-人気条件
-
-</h2>
-
-<div class="tags">
-
-<span>露天風呂</span>
-
-<span>サウナ</span>
-
-<span>家族風呂</span>
-
-<span>源泉かけ流し</span>
-
-<span>岩盤浴</span>
-
-<span>深夜営業</span>
-
-</div>
-
+  <div class="feature-grid">
+    <div class="feature-card"><span>絶景を楽しめる温泉特集</span></div>
+    <div class="feature-card"><span>サウナが自慢の温泉特集</span></div>
+    <div class="feature-card"><span>家族で楽しめる温泉特集</span></div>
+    <div class="feature-card"><span>源泉かけ流しの温泉特集</span></div>
+    <div class="feature-card"><span>コスパ最強の温泉特集</span></div>
+  </div>
 </section>
 
-<footer>
+<section class="ranking-section">
+  <div class="section-head">
+    <h2>日帰り温泉ランキング</h2>
+    <div class="tabs">
+      <button>総合ランキング</button>
+      <button>サウナが人気</button>
+      <button>絶景が人気</button>
+      <button>コスパが人気</button>
+    </div>
+  </div>
 
-<p>
+  <div class="ranking-grid">
+    <div class="rank-card"><span>1</span><div></div><h3>箱根温泉</h3><p>★★★★★ 4.6</p><b>大人：1,500円〜</b></div>
+    <div class="rank-card"><span>2</span><div></div><h3>九番湯 大湯</h3><p>★★★★☆ 4.4</p><b>大人：500円〜</b></div>
+    <div class="rank-card"><span>3</span><div></div><h3>杉乃井ホテル 棚湯</h3><p>★★★★☆ 4.3</p><b>大人：2,000円〜</b></div>
+    <div class="rank-card"><span>4</span><div></div><h3>伊東温泉 ララの湯</h3><p>★★★★☆ 4.2</p><b>大人：850円〜</b></div>
+    <div class="rank-card"><span>5</span><div></div><h3>登別温泉 滝乃家</h3><p>★★★★☆ 4.1</p><b>大人：1,200円〜</b></div>
+  </div>
+</section>
 
-© 2026 日帰り温泉ナビ
+<section class="bottom-grid">
+  <div class="info-box">
+    <h2>新着口コミ</h2>
+    <p><b>箱根温泉</b><br>★★★★★ 5.0<br>平日に行きましたが、とても空いていてゆっくりできました。</p>
+    <p><b>九番湯 大湯</b><br>★★★★☆ 4.0</p>
+  </div>
 
-</p>
+  <div class="info-box">
+    <h2>お役立ちコラム</h2>
+    <p>日帰り温泉のマナーと楽しみ方</p>
+    <p>温泉とサウナ、どちらが先？</p>
+    <p>美肌効果が期待できる温泉成分とは？</p>
+  </div>
 
-</footer>
+  <div class="ad-box">
+    <h2>周辺の宿泊施設を探す</h2>
+    <p>Rakuten Travel</p>
+    <button>宿泊施設も検索する</button>
+  </div>
+</section>
 
-<script src="script.js"></script>
+</main>
 
 </body>
 </html>
