@@ -156,3 +156,10 @@ footer{
 .btn:hover{
     opacity:0.8;
 }
+.card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:10px;
+}
