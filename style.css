@@ -403,3 +403,9 @@ main {
     grid-template-columns: 1fr;
   }
 }
+.rank-card small {
+  display: block;
+  padding: 0 14px 18px;
+  color: #666;
+  font-size: 13px;
+}
