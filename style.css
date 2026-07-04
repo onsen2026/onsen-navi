@@ -274,10 +274,9 @@ main{
   color:#7a3607;
 }
 
-
-
-/* 特集 */
-
+/* =================
+   特集カード
+================= */
 
 .section-head{
   display:flex;
@@ -295,33 +294,101 @@ main{
 
 
 .feature-card{
-  height:160px;
-  border-radius:8px;
+  height:170px;
+  border-radius:12px;
   overflow:hidden;
   position:relative;
 
-  background:
-  linear-gradient(
-   rgba(0,0,0,0.1),
-   rgba(0,0,0,0.6)
-  ),
-  url("hero.png");
-
   background-size:cover;
   background-position:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+  transition:0.3s;
+}
+
+
+.feature-card:hover{
+  transform:translateY(-5px);
+}
+
+
+/* 絶景 */
+
+.feature-card:nth-child(1){
+ background-image:
+ linear-gradient(
+ rgba(0,0,0,0.1),
+ rgba(0,0,0,0.6)
+ ),
+ url("image/zekkei.png");
+}
+
+
+/* サウナ */
+
+.feature-card:nth-child(2){
+ background-image:
+ linear-gradient(
+ rgba(0,0,0,0.1),
+ rgba(0,0,0,0.6)
+ ),
+ url("image/sauna.png");
+}
+
+
+/* 家族 */
+
+.feature-card:nth-child(3){
+ background-image:
+ linear-gradient(
+ rgba(0,0,0,0.1),
+ rgba(0,0,0,0.6)
+ ),
+ url("image/family.png");
+}
+
+
+/* 源泉 */
+
+.feature-card:nth-child(4){
+ background-image:
+ linear-gradient(
+ rgba(0,0,0,0.1),
+ rgba(0,0,0,0.6)
+ ),
+ url("image/gensen.png");
+}
+
+
+/* コスパ */
+
+.feature-card:nth-child(5){
+ background-image:
+ linear-gradient(
+ rgba(0,0,0,0.1),
+ rgba(0,0,0,0.6)
+ ),
+ url("image/cost.png");
 }
 
 
 .feature-card span{
-  position:absolute;
-  left:16px;
-  bottom:16px;
-  color:white;
-  font-size:17px;
-  font-weight:bold;
+
+ position:absolute;
+
+ left:18px;
+ bottom:18px;
+
+ color:white;
+
+ font-size:18px;
+ font-weight:bold;
+
+ text-shadow:
+ 0 3px 8px rgba(0,0,0,0.8);
+
 }
-
-
 
 /* ランキング */
 
