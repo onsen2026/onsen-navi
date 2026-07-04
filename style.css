@@ -471,3 +471,39 @@ main {
     padding: 15px;
   }
 }
+.map-links {
+  position: relative;
+  width: 330px;
+  max-width: 100%;
+}
+
+.map-btn {
+  position: absolute;
+  border: none;
+  background: #7a3607;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,.25);
+}
+
+.map-btn:hover {
+  background: #4f2103;
+}
+
+.kyushu {
+  left: 20px;
+  bottom: 35px;
+}
+
+.chugoku {
+  left: 95px;
+  bottom: 105px;
+}
+
+.kansai {
+  right: 70px;
+  bottom: 135px;
+}
